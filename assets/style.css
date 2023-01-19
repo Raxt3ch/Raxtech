@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Erbaum;
+    src: url(erbaum.otf);
+}
+@font-face {
+    font-family: Erbaum2;
+    src: url(erbaum2.otf);
+}
+* {
+    -webkit-text-size-adjust: none;
+}
+html{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body{
+    background-color:#640191;
+}
+.header ul li {
+    vertical-align: top;
+    width: 33%;
+    display:inline-block;
+}
+li:hover {
+    transform: scale(1.05);
+}
+li{
+    transition: transform .1s;
+    color: rgb(221, 221, 221);
+    font-size: 105%;
+    font-family: Erbaum2;
+}
+.background{
+    top: 0;
+    position: absolute;
+    z-index: -2;
+    margin: 0px auto;
+    top: 0;
+    z-index:0;
+    left: 0;
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+}
+.background2{
+    position: absolute;
+    top: 0;
+    z-index:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    object-fit: cover;
+}
+.header {
+    z-index: 10;
+    top: 0;
+    position: sticky;
+    background-color: rgba(41, 41, 41, 0.25);
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+.logo_header{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    margin-top: 3%;
+    transition: transform .06s;
+    width: 45%;
+}
+.h1_0{
+    position: absolute;
+    z-index: 10;
+    text-align: center; 
+    width: 100%; 
+    left: 0px; 
+    color: rgb(193, 193, 193);
+}
+.h1_1{
+    font-family: Erbaum2;
+    top: 90%;
+    animation: animation_2 2s;
+}
+.h1_2{
+    padding: 0px 10%;
+    font-family: Erbaum;
+    top: 98%;
+    animation: animation_2 2s;
+}
+.h1_3{
+    font-family: Erbaum2;
+    top: 120%;
+    animation: animation_1 2s ;
+}
+.h1_4{
+    bottom: 10px;
+    padding: 0% 10% 8%;
+    display: block;
+    font-family: Erbaum;
+    top: 128%;
+    animation: animation_1 2s ;
+    animation-delay: calc(var(--scroll) * -5s);
+}
+.animalbutton{
+    margin-left: 100%;
+    z-index: 10;
+    float: left;
+    background-color: rgb(30, 32, 44, 0.61);
+    transition: transform .06s;
+    height: 15%;
+    width: 15%;
+}
+.animalbutton:hover{
+    background-color: rgb(15, 16, 22, 0.61);
+    transform: scale(1.05);
+}
+.animalbutton2{
+    z-index: 10;
+    float: left;
+    background-color: rgba(126, 132, 168, 0.61);
+    transition: transform .06s;
+    height: 15%;
+    width: 15%;
+}
+.animalbutton2:hover{
+    background-color: rgba(115, 119, 150, 0.61);
+    transform: scale(1.05);
+}
+@keyframes animation_2 {
+    from  {left:-150%;}
+    to  {left:0px;}
+}
+@keyframes animation_1 {
+    from  {left:-120%;}
+    to  {left:0px;}
+}
